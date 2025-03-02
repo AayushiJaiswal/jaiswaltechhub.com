@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="profile.css"> 
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">JaiswalTechHub.com</div>
+        <nav class="nav">
+            <a href="#home">Home</a>
+            <a href="#about">About </a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#contact">Contact</a>
+            <button id="theme-toggle" class="theme-button">
+                <img src="moon.jpg" id="theme-icon" alt="Theme Toggle">
+            </button>
+        </nav>
+    </header> 
+
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <div class="text-container">
+                <span>Hi! I'm AAYUSHI JAISWAL</span>
+                <span> Tech Explorer</span>
+                <span>Full Stack Developer</span>
+                <span>Tech Enthusiast</span>
+                <span>Continuous Learner</span>
+                <span>Data-Driven Thinker</span>
+                <span> ML Enthusiast</span>
+            </div>
+          
+            <p>
+                <span style="animation-delay: 0s;">Explore</span>
+                <span style="animation-delay: 1s;">my</span>
+                <span style="animation-delay: 2s;">skills,</span>
+                <span style="animation-delay: 3s;">projects,</span>
+                <span style="animation-delay: 4s;">and</span>
+                <span style="animation-delay: 5s;">experiences</span>
+                <span style="animation-delay: 6s;">in</span>
+                <span style="animation-delay: 7s;">the</span>
+                <span style="animation-delay: 8s;">Tech</span>
+                <span style="animation-delay: 9s;">World.</span>
+            </p>
+            <a href="https://drive.google.com/file/d/168tEuGT-e8LFja18TvNbnSk0JTZVGYa7/view?usp=sharing" class="btn fade-in">Download Resume</a>
+        </div>
+        <div class="hero-image">
+            <img src="photo.jpg" alt="Portfolio Image" class="slide-in">
+        </div>
+    </section>
+    
+    
+    
+    <div class="about-section" id="about">
+        <h2>About Me</h2>
+        <p> passionate about technology and innovation, striving to create solutions that transform the world. Let me join in journey of learning, building, and evolving in the tech space.</p>
+
+        <div class="intro-section">
+            I am a passionate and creative full-stack web developer with a keen eye for design and a strong foundation in machine learning.  
+            I love building dynamic, user-friendly web applications that blend functionality with aesthetics.  
+            My expertise spans both front-end and back-end development, ensuring seamless and efficient digital experiences.  
+            Additionally, I explore the power of machine learning to create intelligent solutions that enhance automation and decision-making.  
+            Constantly learning and evolving, I strive to push the boundaries of technology. Explore my work and projects below!
+        </div>
+
+        <a  class="btn fade-in" id="projects">View Work</a>
+        <a class="btn fade-in" id="hireBtn">Hire</a>
+        <div class="slider-container">
+            <div class="slider-reverse">
+                <img src="image5.jpg" alt="Image 5">
+                <img src="image6.jpg" alt="Image 6">
+                <img src="image7.jpg" alt="Image 7">
+                <img src="image8.jpg" alt="Image 8">
+            </div>
+        </div>
+
+    </div>
+
+
+     
+   
+<!-- Technical Skills Section -->
+<div class="skills-section" id="skills">
+    <h2>Technical Skills</h2>
+    <div class="skills-container">
+        <div class="skill-box" onclick="toggleSkill('tech1')">🛠 </div>
+        <div class="skill-content" id="tech1">
+            <strong>Languages:</strong>
+            <ul>
+                <li>Java</li>
+                <li>Python</li>
+            </ul>
+        </div>
+
+        <div class="skill-box" onclick="toggleSkill('tech2')">📊</div>
+        <div class="skill-content" id="tech2">
+            <strong>Analytical Tools:</strong>
+            <ul>
+                <li>Excel</li>
+                <li>Power BI</li>
+                <li>Tableau</li>
+            </ul>
+        </div>
+
+        <div class="skill-box" onclick="toggleSkill('tech3')">💻</div>
+        <div class="skill-content" id="tech3">
+            <strong>Technologies:</strong>
+            <ul>
+                <li>GitHub</li>
+                <li>Numpy</li>
+                <li>Pandas</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Non-Technical Skills Section -->
+<div class="skills-section">
+    <h2>Non-Technical Skills</h2>
+    <div class="skills-container">
+        <div class="skill-box" onclick="toggleSkill('nontech1')">🤝</div>
+        <div class="skill-content" id="nontech1">
+            <strong>Problem Solving</strong>
+            <p> Debugging code in SafeSwipe fraud detection.</p>
+        </div>
+
+        <div class="skill-box" onclick="toggleSkill('nontech2')">🗣</div>
+        <div class="skill-content" id="nontech2">
+            <strong>Communication</strong>
+            <p> Presented project at hackathon.</p>
+        </div>
+
+        <div class="skill-box" onclick="toggleSkill('nontech3')">🤹‍♂️</div>
+        <div class="skill-content" id="nontech3">
+            <strong>Teamwork</strong>
+            <p> Collaborated in NITI Aayog internship.</p>
+        </div>
+
+        <div class="skill-box" onclick="toggleSkill('nontech4')">⏳</div>
+        <div class="skill-content" id="nontech4">
+            <strong>Time Management</strong>
+            <p> Balanced multiple projects effectively.</p>
+        </div>
+
+        <div class="skill-box" onclick="toggleSkill('nontech5')">🔄</div>
+        <div class="skill-content" id="nontech5">
+            <strong>Adaptability</strong>
+            <p> Switched from JS to React for NutriFlow.</p>
+        </div>
+    </div>
+</div>
+
+
+
+    <!-- Projects Section -->
+<div class="projects-section" id="projects">
+    <h2>My Projects</h2>
+
+    <!-- Project 1 -->
+    <div class="project-card">
+        <img src="jss.jpg" alt="JSS Medico" class="project-image">
+        <div class="project-title">Project 1: JSS Medico</div>
+
+        <!-- Tech Stack -->
+        <div class="tech-stack">
+            <img src="firebase.jpg" alt="Firebase" class="tech-icon">
+            <img src="react.jpg" alt="React" class="tech-icon">
+            <img src="node.jpg" alt="Node.js" class="tech-icon">
+        </div>
+
+        <p class="project-description">
+            A healthcare platform that leverages Firebase for real-time database management, ensuring fast and efficient medical data storage and retrieval.
+        </p>
+
+        <a href="https://github.com/AayushiJaiswal/JSSMedico" class="project-link" target="_blank">View on GitHub</a>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card">
+        <img src="safeswipe.jpg" alt="SafeSwipe" class="project-image">
+        <div class="project-title">Project 2: SafeSwipe</div>
+
+        <!-- Tech Stack -->
+        <div class="tech-stack">
+            <img src="react.jpg" alt="React" class="tech-icon">
+            <img src="flask.jpg" alt="Flask" class="tech-icon">
+            <img src="python.jpg" alt="Python" class="tech-icon">
+        </div>
+
+        <p class="project-description">
+            SafeSwipe is a web-based fraud detection system that uses machine learning and AI algorithms to identify fraudulent transactions and prevent scams.
+        </p>
+
+        <a href="https://github.com/username/project2" class="project-link" target="_blank">View on GitHub</a>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project-card">
+        <img src="nutri.jpg" alt="NutriFlow" class="project-image">
+        <div class="project-title">Project 3: NutriFlow</div>
+
+        <!-- Tech Stack -->
+        <div class="tech-stack">
+            <img src="html.jpg" alt="HTML" class="tech-icon">
+            <img src="node.jpg" alt="Node.js" class="tech-icon">
+        </div>
+
+        <p class="project-description">
+            NutriFlow is an e-commerce platform for healthy food products, offering users a seamless shopping experience with secure payment gateways and live order tracking.
+        </p>
+
+        <a href="https://github.com/AayushiJaiswal/nutriflow/tree/master" class="project-link" target="_blank">View on GitHub</a>
+    </div>
+</div>
+
+    <!-- Experience Section -->
+    <div class="experience-section" id="experience">
+        <h2>Experience</h2>
+        <div class="experience-card">
+            <div class="experience-title">SDE Intern at NITI AYOG</div>
+            <div class="experience-duration">13 Sept 2024 - 26 Oct 2024</div>
+            <p>Developed a responsive web application and optimized website performance.</p>
+            <a href="https://drive.google.com/file/d/1AvXy2n7ND3CLKqFwNSXyywR_bfbbxyql/view?usp=sharing" class="certification-link" target="_blank">View Certification</a>
+        </div>
+        <div class="experience-card">
+            <div class="experience-title">Software Engineering Job Simulation</div>
+            <div class="experience-duration">28 jan 2024 </div>
+            <p>Completing the Software Engineering Job Simulation was an eye-opening experience! I worked on real-world projects, honed my coding and debugging skills, and learned to collaborate in an Agile environment. It gave me hands-on exposure to industry tools like React, Node.js, and Git, making me feel job-ready. This experience has boosted my confidence and prepared me for real tech challenges.</p>
+            <a href="https://drive.google.com/file/d/14m1U3rCuDzBQcKKdMQ7bxaFVig-xBGEo/view?usp=sharing" class="certification-link" target="_blank">View Certification</a>
+        </div>
+        <div class="experience-card">
+            <div class="experience-title">Data Anlytics and visualization</div>
+            <div class="experience-duration">26 Jan 2024</div>
+            <p>The Data Analytics and Visualization simulation was incredibly insightful! I gained practical experience working with tools like Excel, Power BI, and Tableau to analyze and visualize data. The hands-on projects helped me understand the importance of data-driven decision-making. This experience has enhanced my analytical skills and made me more confident in presenting complex data insights clearly and effectively</p>
+            <a href="https://drive.google.com/file/d/1VsjtKSCDPW7kY_d3XK3dXI9XkQ9R4C-1/view?usp=sharing" class="certification-link" target="_blank">View Certification</a>
+        </div>
+    </div>
+
+   
+
+
+<!-- Certification Section -->
+<div class="certification-section" id="Certifications">
+    <h2>Certifications</h2>
+
+    <div class="certification-list">
+        <!-- Certification 1 -->
+        <div class="certification-item">
+            <h3>cybersecurity</h3>
+            <p>Learned about network security, cryptography, and ethical hacking techniques. Gained hands-on experience in identifying and mitigating cyber threats, including OWASP Top 10 vulnerabilities. Explored cloud security, identity management, and incident response strategies. Developed practical skills using tools like Metasploit, Wireshark, and Burp Suite</p>
+            <a href="https://drive.google.com/file/d/1nweB8PJm5S_hHBoWeKSx3ry1GPrHnFQU/view?usp=sharing" class="certification-link" target="_blank">View Certificate</a>
+        </div>
+
+        <!-- Certification 2 -->
+        <div class="certification-item">
+            <h3>Javascript</h3>
+            <p>Completed a JavaScript course, gaining expertise in core concepts like ES6+, DOM manipulation, and asynchronous programming. Learned to build dynamic, interactive web applications using modern JavaScript features. Explored frameworks and libraries, enhancing efficiency in frontend development. Worked on hands-on projects, implementing APIs, event handling, and performance optimization. Strengthened problem-solving skills and best practices for scalable JavaScript applications.</p>
+            <a href="https://drive.google.com/file/d/19A69l1UDEgNpsY61_ZeNLo2WxsLT5KPJ/view?usp=sharing" class="certification-link" target="_blank">View Certificate</a>
+        </div>
+     </div>
+</div>
+
+<!-- Contact Me Section -->
+<div class="contact-me-section" id="contact">
+    <h2>Contact Me</h2>
+
+    <!-- Contact Information Links -->
+    <div class="contact-links">
+        <ul>
+            <ul>
+                <li><a href="mailto:your-jaiswalaayushi198@gmail.com" target="_blank"><img src="email.jpg" alt="Email"></a></li>
+                <li><a href="https://github.com/AayushiJaiswal" target="_blank"><img src="github.jpg" alt="GitHub"></a></li>
+                <li><a href="www.linkedin.com/in/aayushi-jaiswal-14480825b" target="_blank"><img src="linkedin.jpg" alt="LinkedIn"></a></li>
+                <li><a href="https://x.com/Aayushi51016553" target="_blank"><img src="twitter.jpg" alt="Twitter"></a></li>
+                <li><a href="http://127.0.0.1:5500/profile.html" target="_blank"><img src="pers.jpg" alt="Website"></a></li>
+            </ul>
+        </ul>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="contact-form">
+        <h3>If you're interested, feel free to message me!</h3>
+
+        <form id="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required placeholder="Your Full Name">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="Your Email Address">
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required placeholder="Your Message"></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</div>
+
+
+<!-- Footer Section -->
+<footer class="footer-section">
+    <div class="footer-content">
+        <div class="footer-left">
+            <p>&copy; 2025 <strong>Your Name</strong>. All Rights Reserved.</p>
+        </div>
+        <div class="footer-middle">
+            <p>Thank you for visiting my portfolio!</p>
+            <p>Feel free to connect with me on:</p>
+            <ul class="social-links">
+                <li><a href="https://www.linkedin.com/in/your-profile" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/your-username" target="_blank">GitHub</a></li>
+                <li><a href="mailto:your-email@example.com">Email</a></li>
+            </ul>
+        </div>
+        <div class="footer-right">
+            <p>Looking forward to collaborating with you!</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+<script src="profile.js"></script>
+</html>
