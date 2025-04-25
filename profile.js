@@ -22,24 +22,20 @@ themeToggle.addEventListener('click', () => {
     }
 });
 
-document.getElementById("hireBtn").addEventListener("click", function () {
-    // WhatsApp Message
-    const phoneNumber = "91-8340576167"; // Replace with your WhatsApp number
-    const whatsappMessage = "Hello, I am interested in hiring you. Let's discuss further!";
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`;
-
-    // Open WhatsApp in a new tab
-    window.open(whatsappUrl, "_blank");
-
-    // Email Message
-    const email = "jaiswalaayushi198@gmail.com"; // Replace with your email
-    const subject = "Hiring Inquiry";
-    const body = "Hello, I would like to discuss a hiring opportunity with you.";
-    const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-
-    // Open Email Client
-    window.location.href = mailtoLink;
-});
+function hireMe() {
+    const phoneNumber = "918340576167"; 
+    const message = encodeURIComponent("Hi Aayushi, I’m interested in hiring you. Let’s connect!");
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
+    // Email link
+    const email = "jaiswalaayushi198@gmail.com"; 
+    const subject = encodeURIComponent("Hiring Inquiry");
+    const body = encodeURIComponent("Hi Aayushi,\n\nI’m reaching out to discuss a job opportunity...");
+    const emailURL = `mailto:${email}?subject=${subject}&body=${body}`;
+   // Open both options
+    window.open(whatsappURL, '_blank');     // Opens WhatsApp
+    window.location.href = emailURL;        // Opens default email client
+  }
+  
 
 function toggleSkill(id) {
     let skill = document.getElementById(id);
